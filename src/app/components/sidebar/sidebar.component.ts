@@ -1,7 +1,6 @@
 import {Component, inject} from '@angular/core';
 import {GifsService} from "../../services/gifs.service";
-import {NgForOf, TitleCasePipe, UpperCasePipe} from "@angular/common";
-import {Gifs} from "../../interfaces/gifs-response.interface";
+import {NgForOf, TitleCasePipe} from "@angular/common";
 
 @Component({
   selector: 'app-sidebar',
