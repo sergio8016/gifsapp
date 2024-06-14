@@ -1,6 +1,7 @@
 import {Component, inject} from '@angular/core';
 import {GifsService} from "../../services/gifs.service";
 import {NgForOf, TitleCasePipe, UpperCasePipe} from "@angular/common";
+import {Gifs} from "../../interfaces/gifs-response.interface";
 
 @Component({
   selector: 'app-sidebar',
@@ -15,11 +16,11 @@ import {NgForOf, TitleCasePipe, UpperCasePipe} from "@angular/common";
 export class SidebarComponent {
   private gifsService:GifsService = inject(GifsService);
 
-  get tags() {
+  get tags(): string[] {
     return this.gifsService.tagsHistory;
   }
 
-  onButtonClick(tag:string){
+  onButtonClick(tag:string): void{
     this.gifsService.searchTag(tag);
   }
 }
