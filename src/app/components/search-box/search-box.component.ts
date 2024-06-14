@@ -17,4 +17,8 @@ export class SearchBoxComponent {
     this.gifsService.searchTag(newTag);
     this.searchInput.nativeElement.value = '';
   }
+
+  onButtonClick() {
+    this.onKeyUp();
+  }
 }
