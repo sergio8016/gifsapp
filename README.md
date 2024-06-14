@@ -8,7 +8,7 @@ After Downloading the project run `npm install` then Run `ng serve -o` for a dev
 
 ## Try it out!
 
-
+https://sergio8016.github.io/gifsapp/
 
 
 ## Preview
